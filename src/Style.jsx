@@ -26,7 +26,7 @@ padding-right:20px;
 font-size: 60px;
 
 @media (max-width: 720px){
-    width:80vw;
+    width:90vw;
     height:10vh;
 
 }
@@ -46,7 +46,7 @@ border-bottom-right-radius:8px;
 padding-top:5px;
 
 @media (max-width: 720px){
-    width:80vw;
+    width:90vw;
     height:65vh;
 
 }
@@ -55,7 +55,7 @@ padding-top:5px;
 export const DivContainer1 = styled.div`
 
 @media (max-width:720px){
-    width: 70vw;
+    width: 80vw;
     display: flex;
 }
 `
@@ -75,19 +75,22 @@ transition:0.8s;
 @media (max-width:720px){
     width: 40vw;
     height: 10vh;
-    transition: 0s;
+    transition: none;
+
     &:hover{
         transform: none;
-        
-        
+         cursor: default;
+         background-color: #adc8cbf8;
+         color: #81400e;;
     }
 }
 
-
-&:hover {
-    cursor: pointer;
-    transform:scale(1.1);
-    color:white;
-    background-color: #000000;
-}
+@media (min-width: 721px) {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      color: white;
+      background-color: #000000;
+    }
+  }
 `
