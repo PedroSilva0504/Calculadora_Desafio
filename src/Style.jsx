@@ -75,11 +75,16 @@ transition:0.8s;
 @media (max-width:720px){
     width: 40vw;
     height: 10vh;
-    
+    transition: 0s;
+    &:hover{
+        transform: none;
+        
+        
+    }
 }
 
 
-&:hover{
+&:hover {
     cursor: pointer;
     transform:scale(1.1);
     color:white;
