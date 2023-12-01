@@ -11,7 +11,11 @@ background-image: url(https://wallpapercave.com/wp/wp2561072.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 
+@media (max-width: 720px){
+   
+    height:100vh;
 
+}
 `
 
 export const H1 = styled.h1`
@@ -47,7 +51,7 @@ padding-top:5px;
 
 @media (max-width: 720px){
     width:90vw;
-    height:65vh;
+    height:60vh;
 
 }
 `
@@ -57,6 +61,7 @@ export const DivContainer1 = styled.div`
 @media (max-width:720px){
     width: 80vw;
     display: flex;
+    
 }
 `
 
@@ -76,10 +81,10 @@ transition:0.8s;
     width: 40vw;
     height: 10vh;
     transition: none;
+    
 
     &:hover{
         transform: none;
-         cursor: default;
          background-color: #adc8cbf8;
          color: #81400e;;
     }
