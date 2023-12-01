@@ -44,31 +44,31 @@ function resultado(){
     <S.Main>
       <S.H1>{numero}</S.H1>
       <S.Div>
-      <div>
+      <S.DivContainer1>
         {/* usei a propriedade "value", para determinar que o valor que eu eu quero é aquele no caso dos números e operações */}
         <S.Button onClick={realizandoOperacao} value={"+"} >+</S.Button>
         <S.Button onClick={realizandoOperacao} value={"-"} >-</S.Button>
         <S.Button onClick={realizandoOperacao} value={"/"} >/</S.Button>
         <S.Button onClick={realizandoOperacao} value={"x"}>x</S.Button>
-        </div>
-        <div>
+        </S.DivContainer1>
+        <S.DivContainer1>
         <S.Button onClick={limpar}>C</S.Button>
         <S.Button onClick={inserirNumero} value={1}>1</S.Button>
         <S.Button onClick={inserirNumero} value={2}>2</S.Button>
         <S.Button onClick={inserirNumero} value={3}>3</S.Button>
-        </div>
-        <div>
+        </S.DivContainer1>
+        <S.DivContainer1>
         <S.Button onClick={inserirNumero} value={4}>4</S.Button>
         <S.Button onClick={inserirNumero} value={5}>5</S.Button>
         <S.Button onClick={inserirNumero} value={6} >6</S.Button>
         <S.Button onClick={inserirNumero} value={7} >7</S.Button>
-        </div>
-        <div>
+        </S.DivContainer1>
+        <S.DivContainer1>
         <S.Button onClick={inserirNumero} value={8} >8</S.Button>
         <S.Button onClick={inserirNumero} value={9} >9</S.Button>
         <S.Button onClick={inserirNumero} value={0}>0</S.Button>
         <S.Button onClick={resultado}>=</S.Button>
-        </div>
+        </S.DivContainer1>
       </S.Div>
     </S.Main>
   )

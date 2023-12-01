@@ -10,6 +10,8 @@ height:100vh;
 background-image: url(https://wallpapercave.com/wp/wp2561072.jpg);
 background-repeat: no-repeat;
 background-size: cover;
+
+
 `
 
 export const H1 = styled.h1`
@@ -22,6 +24,12 @@ border-top-right-radius:8px;
 border-top-left-radius:8px;
 padding-right:20px;
 font-size: 60px;
+
+@media (max-width: 720px){
+    width:80vw;
+    height:10vh;
+
+}
 `
 
 
@@ -36,7 +44,22 @@ align-items:center;
 border-bottom-left-radius:8px;
 border-bottom-right-radius:8px;
 padding-top:5px;
+
+@media (max-width: 720px){
+    width:80vw;
+    height:65vh;
+
+}
 `
+
+export const DivContainer1 = styled.div`
+
+@media (max-width:720px){
+    width: 70vw;
+    display: flex;
+}
+`
+
 export const Button = styled.button`
 width:70px;
 height:70px;
@@ -49,6 +72,12 @@ background-color: #adc8cbf8;
 color: #81400e;
 font-weight:bold;
 transition:0.8s;
+@media (max-width:720px){
+    width: 40vw;
+    height: 10vh;
+    
+}
+
 
 &:hover{
     cursor: pointer;
